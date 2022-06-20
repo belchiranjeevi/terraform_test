@@ -1,0 +1,45 @@
+-->how to pass credtial to one script to onther script
+--->save credentials as environmental variable
+---> how to run loops in ps, loop to be active
+loop should be
+user input 0 stop
+1,2,3---continue
+============================
+
+for ($num = 1 ; $num -le 10 ; $num++){    "I count $num"}
+----------------------------------------------------------
+$num = Read-Host "Input a number"
+
+$isPrime = $true
+for ($y = 2 ; $y -lt $num ; $y++ )
+{
+    if (($num / $y) -is [int]) {
+        Write-Host "$num is not a prime number"
+        $isPrime = $false
+        break
+    }
+}
+
+if ($isPrime -eq $true) {
+    Write-Host "$num is a prime number"
+}
+----------------------------------------------
+for($i=0; $i -gt 20; $i++){
+Write-Host $i
+if ($i -eq 0){
+break
+}
+}
+--------------------------
+
+switch ('Alpha','Beta','Delta') {
+"Alpha" {'First Block Executes'
+continue}
+'Beta' {'Second Block Executes'
+break }
+'Delta'  {'This will not Execute'}
+}
+
+
+
+
