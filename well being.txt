@@ -1,0 +1,3 @@
+Sports: Helmet,running shoes
+wfh: table, chair
+Societal: water purifier
